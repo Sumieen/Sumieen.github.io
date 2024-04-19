@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* CSS styles for the form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="cameos.html">Cameos</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="bugs">Report a Bug</option>
+                <option value="combo">Send in a Combo</option>
+                <option value="info">Request More Information</option>
+                <option value="other">Other</option>
+            </select>
+            <div id="combo-name" style="display: none;">
+                <label for="name">Contact Info:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <script>
+        // Show/hide combo name field based on selected category
+        document.getElementById('category').addEventListener('change', function() {
+            var comboNameField = document.getElementById('combo-name');
+            if (this.value === 'combo') {
+                comboNameField.style.display = 'block';
+            } else {
+                comboNameField.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
