@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     reasonSelect.addEventListener('change', toggleFields);
-    toggleFields(); // Call on initial load
+    toggleFields(); 
 });

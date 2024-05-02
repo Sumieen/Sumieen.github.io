@@ -1,16 +1,16 @@
 body {
   font-family: 'Arial', sans-serif;
   color: #c0c0c0;
-  background-color: #121212; /* Dark background for the whole page */
+  background-color: #121212; 
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #FF0000; /* Bright red header */
+  background-color: #FF0000; 
   padding: 10px 20px;
   text-align: center;
-  color: #FFFFFF; /* White text for contrast */
+  color: #FFFFFF; 
 }
 nav {
   background-color: #212121;
@@ -19,24 +19,24 @@ nav {
   padding: 10px 0;
 }
 nav a {
-  color: #FFA500; /* Using orange color for links */
+  color: #FFA500; 
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
 }
 nav a:hover {
-  color: #FFFFFF; /* White on hover */
+  color: #FFFFFF; 
 }
 .container {
   padding: 20px;
   text-align: center;
 }
 .main-heading {
-  color: #FFA500; /* Consistent orange color for headings */
+  color: #FFA500; 
   margin: 20px 0;
 }
 .overview {
-  background-color: #282828; /* Slightly lighter dark shade for sections */
+  background-color: #282828; 
   padding: 20px;
   margin: 20px auto;
   width: 80%;
@@ -49,14 +49,14 @@ nav a:hover {
 }
 .gallery img {
   margin: 40px;
-  width: 100%; /* Percentage of the container's width */
-  max-width: 300px; /* Optional: to ensure they don't get too large on bigger screens */
+  width: 100%; 
+  max-width: 300px;
   border-radius: 8px;
-  object-fit: cover; /* Keeps aspect ratio, might crop some parts of the image */
+  object-fit: cover; 
 }
 footer {
   background-color: #212121;
-  color: #FFFFFF; /* White text for footer for better readability */
+  color: #FFFFFF; 
   text-align: center;
   padding: 12px 20px;
   position: fixed;
@@ -104,7 +104,7 @@ input[type="submit"]:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7); /* Dark background with opacity */
+  background-color: rgba(0, 0, 0, 0.7); 
   color: white;
   padding: 5px 10px;
   visibility: hidden;
@@ -125,7 +125,7 @@ input[type="submit"]:hover {
 }
 
 #characterInfo img {
-  width: 200px; /* Adjust size as needed */
+  width: 200px; 
   height: auto;
   display: block;
 }
@@ -144,7 +144,7 @@ input[type="submit"]:hover {
 }
 
 #characterInfo img {
-  width: 200px; /* Adjust size as needed */
+  width: 200px; 
   height: auto;
   margin-right: 20px;
 }
@@ -154,16 +154,34 @@ input[type="submit"]:hover {
   flex-direction: column;
 }
  
-/* Container to center the select box */
+
 .select-container {
   display: flex;
-  justify-content: center; /* Centers the select in the horizontal direction */
-  margin: 20px 0; /* Adds some space above and below the select */
+  justify-content: center; 
+  margin: 20px 0; 
 }
 
-/* Styling for the select element */
+
 select {
-  padding: 10px 20px; /* Makes the select taller and wider */
-  font-size: 1.2em; /* Increases the font size */
-  cursor: pointer; /* Changes the cursor to indicate it's selectable */
+  padding: 10px 20px; 
+  font-size: 1.2em; 
+  cursor: pointer; 
 }
+
+
+.combo-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.combo-table th, .combo-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.combo-table th {
+  background-color: #333;
+  color: white;
+}
+

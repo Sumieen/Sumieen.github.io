@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const characterSelect = document.getElementById('characterSelect');
+    const characterSelect = document.getElementById('kameoSelect');
     const characterInfo = document.getElementById('characterInfo');
     const characterImage = document.getElementById('characterImage');
     const characterBio = document.getElementById('characterBio');
@@ -45,6 +45,38 @@ document.addEventListener('DOMContentLoaded', function () {
             age: '35',
             kombosPage: 'kombos/johnnycage.html'
         },
+        frost: {
+            image: 'images/FrostKAM_Skin001_Pal001.png',
+            bio: "Frost is a fierce competitor known for her icy temper and cold demeanor. A former apprentice of Sub-Zero, she left the Lin Kuei to forge her own path. Ambitious and strong-willed, Frost seeks to prove herself as the superior cryomancer in Earthrealm and beyond, willing to challenge anyone standing in her way.",
+            faction: 'Earthrealm',
+            age: '25',
+            kombosPage: 'kombos/frost.html'
+        },
+        
+        jax: {
+            image: 'images/JaxKAM_Tower.png',
+            bio: "Major Jackson 'Jax' Briggs is a top-notch Special Forces commander with cybernetically-enhanced arms that give him superhuman strength. Dedicated to protecting Earthrealm from any threat, Jax combines military tactics with brute force, often leading his team into the heart of darkness to fend off invasions.",
+            faction: 'Special Forces',
+            age: '45',
+            kombosPage: 'kombos/jax.html'
+        },
+        
+        cyrax: {
+            image: 'images/CyraxKAM_Tower.webp',
+            bio: "Once a human member of the Lin Kuei, Cyrax was transformed into a cybernetic ninja that excels in long-range combat and tactical warfare. Programmed to serve the clan's objectives, his struggle to regain his human memories and conscience makes him a tragic figure in the battlefields of Earthrealm.",
+            faction: 'Lin Kuei',
+            age: 'Unknown',
+            kombosPage: 'kombos/cyrax.html'
+        },
+        
+        sektor: {
+            image: 'images/SektorKAM_Skin001_Pal001.png',
+            bio: "Sektor, the son of the Lin Kuei Grandmaster, was the first to volunteer for the clan's cyber-initiative, becoming a heartless cyborg. Loyal only to his programming, he sees emotions as a weakness and aims to transform all Lin Kuei members into cyborgs, believing this is the path to ultimate perfection.",
+            faction: 'Lin Kuei',
+            age: 'Unknown',
+            kombosPage: 'kombos/sektor.html'
+        }
+        
         
     }
 
