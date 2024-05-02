@@ -153,15 +153,17 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
 }
-body, html {
-  height: 100%;
-  margin: 0;
+ 
+/* Container to center the select box */
+.select-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Centers the select in the horizontal direction */
+  margin: 20px 0; /* Adds some space above and below the select */
 }
 
-.search-container {
-  align-self: center; /* Center horizontally */
-  margin-top: 100px; /* Lower it down from the center */
+/* Styling for the select element */
+select {
+  padding: 10px 20px; /* Makes the select taller and wider */
+  font-size: 1.2em; /* Increases the font size */
+  cursor: pointer; /* Changes the cursor to indicate it's selectable */
 }
