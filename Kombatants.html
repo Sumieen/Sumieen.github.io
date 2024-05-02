@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kharacters - Mortal Kombat</title>
+    <link rel="stylesheet" href="base.css">
+    <script src="kharacters.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mortal Kombat Kharacters</h1>
+    </header>
+    <select id="characterSelect">
+        <option value="">Select a Kharacter</option>
+        <option value="scorpion">Scorpion</option>
+        <option value="liu_kang">Liu Kang</option>
+        <option value="sub_zero">Sub-Zero</option>
+        <option value="raiden">Raiden</option>
+        <option value="johnny_kage">Johnny Kage</option>
+    </select>
+    <div id="characterInfo" style="display:none;">
+        <img id="characterImage" src="" alt="Character Image">
+        <div class="bio-container">
+            <p id="characterBio"></p>
+            <p><strong>Faction:</strong> <span id="characterFaction"></span></p>
+            <p><strong>Age:</strong> <span id="characterAge"></span></p>
+            <a id="kombosLink" href="#">View Kombos</a>
+        </div>
+    </div>
+</body>
+</html>

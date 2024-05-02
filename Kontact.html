@@ -1,82 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kombat DB</title>
     <link rel="stylesheet" href="base.css">
-    <style>
-        /* CSS styles for the form */
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        input[type="text"],
-        input[type="email"],
-        select
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 20px;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="characters.html">Characters</a></li>
-                <li><a href="cameos.html">Cameos</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+        <h1>Contact Us</h1>
     </header>
+    <nav>
+        <a href="Main.html">Home</a>
+        <a href="About.html">About Us</a>
+        <a href="Kontact.html">Contact</a>
+        <a href="Kombatants.html">Kharacters</a>
+        <a href="Kombos.html">Kombos</a>
+        <a href="Kombatants.html">Kameos</a>
+    </nav>
+    <main>
+        <form action="/submit_contact_form" method="post" enctype="multipart/form-data">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit.php" method="post">
-            <label for="category">Category:</label>
-            <select id="category" name="category">
-                <option value="bugs">Report a Bug</option>
-                <option value="combo">Send in a Combo</option>
-                <option value="info">Request More Information</option>
-                <option value="other">Other</option>
+            <label for="reason">Reason for Contacting:</label>
+            <select id="reason" name="reason">
+                <option value="new_kombo">Submit a New Kombo</option>
+                <option value="bug_report">Bug Reporting</option>
+                <option value="site_review">Site Review</option>
             </select>
-            <div id="combo-name" style="display: none;">
-                <label for="name">Contact Info:</label>
-                <input type="text" id="name" name="name">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <div id="file-input-container" style="display:none;">
+                <label for="file">Upload a File or Video:</label>
+                <input type="file" id="file" name="file">
             </div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <input type="submit" value="Submit">
+
+            <div id="additional-combo-fields" style="display:none;">
+                <label for="combo-details">Kombo Details:</label>
+                <textarea id="combo-details" name="combo-details"></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
         </form>
-    </section>
-
-    <script>
-        // Show/hide combo name field based on selected category
-        document.getElementById('category').addEventListener('change', function() {
-            var comboNameField = document.getElementById('combo-name');
-            if (this.value === 'combo') {
-                comboNameField.style.display = 'block';
-            } else {
-                comboNameField.style.display = 'none';
-            }
-        });
-    </script>
-
+    </main>
+    <footer>
+        <p>Copyright © 2024 Kombat DB. All rights reserved.</p>
+    </footer>
+    <script src="contactForm.js"></script>
 </body>
 </html>
